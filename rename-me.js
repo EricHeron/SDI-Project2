@@ -56,15 +56,23 @@ if (myPrompt === "yes") {
 		
 		console.log("The final chore they had was cleaning the pet areas. They completed that task in 20 minutes");
 		
-// Number Function (This code will subtract one from the number each time the loop is completed
+// Number Function and For loop (This code will subtract one from the number each time the loop is completed)
 		var choresDone = function(number) {
 			for (number; number > 0; number--) {
 				console.log("They had " + number + " chores to go!");
-				
+
+// Number Function (Subtracts first number from second number) which in this case is, (5-5)				
+				var subtract = function(firstNumber, secondNumber) {
+					var math = firstNumber - secondNumber;
+					console.log(math + " to go!");
+				}
 			}
+
+// Return Number is 0 (displayed by saying, "0 to go!")
+			subtract(5, 5);
 		}
 		choresDone(5);
-		
+	
 // Return Number is 0 and it is displayed by the console.log("NO MORE CHORES!!!")
 		console.log("NO MORE CHORES!!!");
 		console.log("After " + worker1 + " and " + worker2 + " finished their chores, they went to a movie to relax.");
