@@ -27,9 +27,21 @@ if (myPrompt === "yes") {
 	if (myConfirm === true) {
 		console.log("Glad you chose to hear more of the story! They work together to get all the chores done.");
 
-// Boolean Function will start this code if it is true, see bottom for false results
+// String Function will show that, (laundry takes 10 minutes to complete)
 		var choreInfo = function(nameOfChore, timeItTakes) {
+
+// Return String for ("laundry",10)
 			console.log(nameOfChore + " takes " + timeItTakes + " minutes to complete.");
+			
+// Boolean Function (2 >= 0, 3 >= 0) = true, if false the, "Get to work" code does not run
+			var boolean = function (randomNumber1, randomNumber2) {
+				if (randomNumber1 >= 0 && randomNumber2 >= 0) {
+					console.log("Get to work");
+				}
+				
+			}
+// Return Boolean (since both numbers were greater than or equal to 0, they sent the message, "Get to work")
+			boolean(2, 3);
 		}
 		choreInfo("Laundry", 10);
 		
@@ -78,7 +90,7 @@ if (myPrompt === "yes") {
 		console.log("After " + worker1 + " and " + worker2 + " finished their chores, they went to a movie to relax.");
 		
 	}
-	
+
 // This code runs if the confirm comes back false
 	else {
 		console.log("Refresh the page to start over");
