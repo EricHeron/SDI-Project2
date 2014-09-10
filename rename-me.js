@@ -32,24 +32,41 @@ if (myPrompt === "yes") {
 			console.log(nameOfChore + " takes " + timeItTakes + " minutes to complete.");
 		}
 		choreInfo("Laundry", 10);
+		
 // Initiator of While loop
 		var laundry = 10;
 		while (laundry > 0){
 			console.log(laundry + " minutes to go.");
 			laundry-= 5;
 		}
+		
 // Return Boolean
 		console.log("All done!");
-		
-// String Function
 		choreInfo("Kitchen", "1 hour and 30");
 		choreInfo("Living Room", "1 hour and 15");
+
+// String Function
 		var bedroom = function(subRoom1, subRoom2) {
 			console.log(subRoom1 + " clean " + subRoom2 + " clean ");
 		}
 		console.log("All done with the bedroom! It only took an hour.");
-		bedroom("Master bathroom", "and bedroom closet");
 
+// Return String
+		bedroom("Master bathroom", "and bedroom closet");
+		
+		console.log("The final chore they had was cleaning the pet areas. They completed that task in 20 minutes");
+		
+// Number Function
+		var choresDone = function(number) {
+			for (number; number > 0; number--) {
+				console.log("They had " + number + " chores to go!");
+				
+			}
+		}
+		choresDone(5);
+		console.log("NO MORE CHORES!!!");
+		console.log("After " + worker1 + " and " + worker2 + " finished their chores, they went to a movie to relax.");
+		
 	}
 	else {
 		console.log("Refresh the page to start over");
