@@ -33,22 +33,29 @@ if (myPrompt === "yes") {
 // Return String for ("laundry",10)
 			console.log(nameOfChore + " takes " + timeItTakes + " minutes to complete.");
 			
+				}
+				
 // Boolean Function (2 >= 0, 3 >= 0) = true, if false the, "Get to work" code does not run
 			var boolean = function (randomNumber1, randomNumber2) {
 				if (randomNumber1 >= 0 && randomNumber2 >= 0) {
 					console.log("Get to work");
-				}
-				
+					if (randomNumber1 <=5 || randomNumber >=2) {
+						console.log(worker1 + " will work on the Kitchen and Bedroom " + worker2 + " will work on the Laundry and Living Room");
+					}
+
 			}
-// Return Boolean (since both numbers were greater than or equal to 0, they sent the message, "Get to work")
-			boolean(2, 3);
 		}
+
+// Return Boolean (since both numbers were greater than or equal to 0, they sent the message, "Get to work")
+		boolean(2, 3);
+		
+// Return String shows, (Laundry takes 10 minutes to complete)
 		choreInfo("Laundry", 10);
 		
 // Initiator of While loop (While loop will count down by 5's until it hits 0)
 		var laundry = 10;
 		while (laundry > 0){
-			console.log(laundry + " minutes to go.");
+			console.log(laundry + " minutes to go on laundry.");
 			laundry-= 5;
 		}
 		
