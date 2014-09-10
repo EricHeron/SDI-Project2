@@ -15,7 +15,7 @@ var myPrompt;
 // Prompt
 var myPrompt = prompt("Ready to begin?", "Type yes or no in lowercase");
 
-// Procedure
+// Procedure with Prompt Argument
 if (myPrompt === "yes") {
 	console.log("Let me tell you a little story about " + worker2 + " and " + worker1);
 	console.log(worker1 + " and " + worker2 + " are two young newly weds.");
@@ -25,7 +25,7 @@ if (myPrompt === "yes") {
 // Confirm
 	var myConfirm = confirm("Would you like to continue the story?");
 	if (myConfirm === true) {
-		console.log("Good! They have 3 amazing pets to take care of together.");
+		console.log("Good! They work together to get all the chores done.");
 
 // Boolean Function
 		var choreInfo = function(nameOfChore, timeItTakes) {
@@ -42,7 +42,9 @@ if (myPrompt === "yes") {
 			console.log(laundry + " minutes to go.");
 			laundry-= 5;
 		}
+// Return Boolean
 		console.log("All done!");
+		
 	}
 	else {
 		console.log("Refresh the page to start over");
