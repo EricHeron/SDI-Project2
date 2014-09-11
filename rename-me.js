@@ -37,16 +37,25 @@ if (myPrompt === "yes") {
 				
 // Boolean Function (2 >= 0, 3 >= 0) = true, if false the, "Get to work" code does not run
 			var boolean = function (randomNumber1, randomNumber2) {
+
+// And Boolean logic
 				if (randomNumber1 >= 0 && randomNumber2 >= 0) {
 					console.log("Get to work");
-					if (randomNumber1 <=5 || randomNumber >=2) {
+					
+// Or Boolean logic
+					if (randomNumber1 <= 5 || randomNumber >= 2) {
 						console.log(worker1 + " will work on the Kitchen and Bedroom " + worker2 + " will work on the Laundry and Living Room");
+						
+// Not Boolean logic
+						if (!(randomNumber1 >= 3) ) {
+							console.log("They will work on the pet area together after they have finished their other chores.");
+						}
 					}
 
 			}
 		}
 
-// Return Boolean (since both numbers were greater than or equal to 0, they sent the message, "Get to work")
+// Function Result (since both numbers were greater than or equal to 0, they sent the message, "Get to work")
 		boolean(2, 3);
 		
 // Return String shows, (Laundry takes 10 minutes to complete)
